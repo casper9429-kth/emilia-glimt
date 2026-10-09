@@ -75,8 +75,8 @@ th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sten
 .pill{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:99px;background:var(--natt);color:var(--linne);margin-right:6px;vertical-align:middle}
 .pill.g{background:var(--gold-grad);color:var(--natt)}
 .hooks{counter-reset:h;list-style:none;margin:0}
-.hooks li{counter-increment:h;display:grid;grid-template-columns:38px 1fr;border-bottom:1px solid var(--rok);padding:12px 0;margin:0}
-.hooks li::before{content:counter(h,decimal-leading-zero);font-family:var(--serif);font-style:italic;color:var(--guld);font-size:18px}
+.hooks li{counter-increment:h;position:relative;border-bottom:1px solid var(--rok);padding:12px 0 12px 40px;margin:0}
+.hooks li::before{content:counter(h,decimal-leading-zero);position:absolute;left:0;top:10px;font-family:var(--serif);font-style:italic;color:var(--guld);font-size:18px}
 .hooks small{display:block;color:var(--sten);font-size:13px}
 .weeks{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .weeks div{background:#fff;border:1px solid var(--rok);border-radius:14px;padding:18px;font-size:14px}
